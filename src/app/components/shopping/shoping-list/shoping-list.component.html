@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let shop of shoppingLists">
+      <h2>{{shop.title}}</h2>
+      <img [src]="shop.url" alt="">
+      <a [href]="shop.thumbnailUrl">{{shop.thumbnailUrl}}</a>
+      <p>
+        {{shop.albumId}}
+      </p>
+    </div>
+  </div>
+</div>
